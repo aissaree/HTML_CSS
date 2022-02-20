@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ลงทะเบียน</title>
+</head>
+<body>
+   <h1 align = "left">แบบฟอร์มลงทะเบียน</h1> 
+   <form action="" align="left">
+       <div>
+           <label for="fname">ชื่อ</label>
+           <input type="text" name ="fname" placeholder="กรุณากรอกชื่อ">
+       </div>
+       <div>
+            <label for="lname">นามสกุล</label>
+            <input type="text" name="lname">
+        </div>
+        <div>
+            <label for="email">Email</label>
+            <input type="email" name="email" required>
+        </div>
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" required>
+        </div>
+        <div>
+            <label for="address">ที่อยู่</label>
+            <textarea name="address" id="" cols="20" rows="5"></textarea>
+        </div>
+        <div>
+            <label for="age">อายุ</label>
+            <input type="number" name="age" min="0" max="90" value="15">
+        </div>
+        <div>
+            <label for="BD">วันเกิด</label>
+            <input type="date" name="BD"> <!-- readoonly ใช้แสดงข้อมูลอย่างเดียวแก้ไขไม่ได้-->
+        </div>
+        <div>
+            <label for="tel">เบอร์โทรศัพท์</label>
+            <input type="tel" name="tel" required >
+        </div>
+        <div>
+            <label for="color">สีที่ชอบ</label>
+            <input type="color" name="color">
+        </div>
+        <div>
+            <label for="range">ช่วงตัวเลข</label>
+            <input type="range" name="rangenumber">
+        </div>
+        <div>
+            <label for="edu">ระดับการศึกษา</label>
+            <select name="edu" id="" >
+                <option value="ปริญาตรี">ปริญาตรี</option>
+                <option value="ปริญาโท" selected>ปริญาโท</option>
+                <option value="ปริญาเอก">ปริญาเอก</option>
+            </select>
+        </div>
+        <div>
+            <label for="gender">เพศ</label>
+            <input type="radio" name="gender">เพศชาย
+            <input type="radio" name="gender">เพศหญิง
+        </div>
+        <div>
+            <label for="fav">สิ่งที่ชอบ</label>
+            <input type="checkbox" name="fav">เขียนเว็บ
+            <input type="checkbox" name="fav">อ่านการ์ตูน
+            <input type="checkbox" name="fav">ดู youtobe
+            <input type="checkbox" name="fav">เล่นดนตรี
+        </div>
+        <div>
+            <label for="">แนบเอกสาร</label>
+            <input type="file" required>
+        </div>
+        <div>
+            <label for="">เว็บไซต์</label>
+            <input type="url">
+        </div>
+        <div>
+            <input type="submit" value="บันทึกข้อมูล">
+        </div>
+   </form>
+</body>
+</html>
